@@ -1,6 +1,4 @@
-﻿using System.Drawing;
-
-namespace CGAA
+﻿namespace CGAA
 {
     public static class Utils
     {
@@ -25,6 +23,20 @@ namespace CGAA
             }
 
             return pnts;
+        }
+
+        public static List<Segment> GetSetOfRandomSegments(int count, int spanX, int spanY)
+        {
+            var segments = new List<Segment>();
+            var pnts1 = GetSetOfRandomPoints(count, spanX, spanY);
+            var pnts2 = GetSetOfRandomPoints(count, spanY, spanY);
+
+            for (int i = 0; i < count; i++)
+            {
+                segments.Add(new Segment(pnts1[i], pnts2[count - i - 1]));
+            }
+
+            return segments;
         }
 
     }

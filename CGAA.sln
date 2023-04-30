@@ -7,10 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CGAA", "CGAA\CGAA.csproj", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misc", "Misc", "{58A92EE2-FCD1-47B1-A52D-640347ED09FC}"
 	ProjectSection(SolutionItems) = preProject
-		C:\Users\Ibrahim Saad\Desktop\content.png = C:\Users\Ibrahim Saad\Desktop\content.png
+		Misc\content.png = Misc\content.png
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CGAA.Visualizer", "CGAA.Visualizer\CGAA.Visualizer.csproj", "{71B8C473-49CE-468B-B1F7-58901C626C99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CGAA.Visualizer", "CGAA.Visualizer\CGAA.Visualizer.csproj", "{71B8C473-49CE-468B-B1F7-58901C626C99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CGAA.UnitTests", "CGAA.UnitTests\CGAA.UnitTests.csproj", "{3CD89BAA-EE1A-474C-B2B8-4C17B06149CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +28,10 @@ Global
 		{71B8C473-49CE-468B-B1F7-58901C626C99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71B8C473-49CE-468B-B1F7-58901C626C99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71B8C473-49CE-468B-B1F7-58901C626C99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CD89BAA-EE1A-474C-B2B8-4C17B06149CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CD89BAA-EE1A-474C-B2B8-4C17B06149CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CD89BAA-EE1A-474C-B2B8-4C17B06149CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CD89BAA-EE1A-474C-B2B8-4C17B06149CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
