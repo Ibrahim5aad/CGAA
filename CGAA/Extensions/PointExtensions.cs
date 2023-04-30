@@ -1,10 +1,10 @@
 ﻿using MathNet.Numerics.LinearAlgebra;
 using MathNet.Numerics.LinearAlgebra.Double;
-using System.Drawing;
+using System.Numerics;
 
 namespace CGAA.Extensions
 {
-     static class PointExtensions
+    static class PointExtensions
     {
 
         /// <summary>
@@ -19,9 +19,9 @@ namespace CGAA.Extensions
         internal static bool IsPointsLiesToTheRightOfLine(this Point point, Point endpoint1, Point endpoint2)
         {
             Matrix<double> matrix = DenseMatrix.OfArray(new double[,] {
-                                                            {point.X, point.Y, 1},
-                                                            {endpoint1.X, endpoint1.Y ,1},
-                                                            {endpoint2.X, endpoint2.Y ,1}});
+                                                {point.X, point.Y, 1},
+                                                {endpoint1.X, endpoint1.Y ,1},
+                                                {endpoint2.X, endpoint2.Y ,1}});
 
 
             return matrix.Determinant() < 0;
