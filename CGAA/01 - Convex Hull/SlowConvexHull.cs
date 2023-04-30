@@ -1,5 +1,4 @@
 ﻿using CGAA.Extensions;
-using System.Drawing;
 
 namespace CGAA.Convex_Hull
 {
@@ -30,12 +29,12 @@ namespace CGAA.Convex_Hull
 
                     bool valid = true;
 
-                    foreach (var toCheckPoint in points)
+                    foreach (var pntToCheck in points)
                     {
-                        if (toCheckPoint == point1 || toCheckPoint == point2)
+                        if (pntToCheck == point1 || pntToCheck == point2)
                             continue;
 
-                        if (!toCheckPoint.IsPointsLiesToTheRightOfLine(point1, point2))
+                        if (!pntToCheck.IsPointsLiesToTheRightOfLine(point1, point2))
                         {
                             valid = false;
                             break;
@@ -48,9 +47,6 @@ namespace CGAA.Convex_Hull
                     }
                 }
             }
-            
-
-            
 
             return OrderPointPairs(convexHull);
         }
